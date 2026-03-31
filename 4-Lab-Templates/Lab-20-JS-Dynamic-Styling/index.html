@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 20: Dynamic Text Styling with JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .toolbar {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .toolbar button {
+            padding: 8px 16px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            background: #fff;
+        }
+        .toolbar button:hover {
+            background: #e3f2fd;
+        }
+        .btn-bold { font-weight: bold; }
+        .btn-italic { font-style: italic; }
+        .btn-underline { text-decoration: underline; }
+        .btn-reset { background-color: #ffcdd2 !important; }
+        .paragraph-selector {
+            background: #fff;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .paragraph-selector label {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .content-area p {
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            line-height: 1.6;
+            margin: 10px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            border-left: 4px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Dynamic Text Styling with JavaScript</h1>
+
+    <!-- TODO: Add paragraph selector (radio buttons) -->
+    <div class="paragraph-selector">
+        <strong>Select Paragraph:</strong>
+        <!-- <input type="radio" name="paraSelect" value="para1" id="sel1" checked> -->
+        <!-- <label for="sel1">Paragraph 1</label> -->
+        <!-- ... add for para2 and para3 -->
+    </div>
+
+    <!-- TODO: Add toolbar with style buttons -->
+    <div class="toolbar">
+        <!-- <button class="btn-bold" onclick="toggleBold()">Bold</button> -->
+        <!-- <button class="btn-italic" onclick="toggleItalic()">Italic</button> -->
+        <!-- <button class="btn-underline" onclick="toggleUnderline()">Underline</button> -->
+        <!-- <button class="btn-reset" onclick="resetAll()">Reset All</button> -->
+        <!-- Bonus: <input type="color" id="colorPicker" value="#000000"> -->
+        <!-- <button onclick="changeColor()">Change Color</button> -->
+    </div>
+
+    <!-- TODO: Add the three paragraphs from content.md -->
+    <div class="content-area">
+        <!-- <p id="para1">Paragraph 1 text here...</p> -->
+        <!-- <p id="para2">Paragraph 2 text here...</p> -->
+        <!-- <p id="para3">Paragraph 3 text here...</p> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

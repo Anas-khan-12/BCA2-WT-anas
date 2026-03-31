@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 21: Student Information System — Mandsaur University</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #1a237e;
+        }
+        .intro {
+            text-align: center;
+            color: #555;
+            margin: 20px 0;
+        }
+        .toggle-btn {
+            display: block;
+            margin: 15px auto;
+            padding: 10px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            background-color: #1976D2;
+        }
+        .toggle-btn:hover { opacity: 0.9; }
+        .profile-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+            text-align: center;
+            margin: 20px 0;
+        }
+        .profile-card img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .profile-card table {
+            margin: 0 auto;
+            text-align: left;
+            border-collapse: collapse;
+        }
+        .profile-card td {
+            padding: 6px 15px;
+        }
+        .profile-card td:first-child {
+            font-weight: bold;
+            color: #555;
+        }
+        .hidden-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+            margin: 15px 0;
+        }
+        .hidden-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .hidden-section th, .hidden-section td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .hidden-section th {
+            background-color: #e3f2fd;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Student Information System</h1>
+    <p style="text-align: center; color: #777;">Mandsaur University</p>
+
+    <p class="intro">
+        Click the button below to reveal the student profile card.
+    </p>
+
+    <!-- TODO: Add a button that calls toggleProfile() -->
+    <!-- <button class="toggle-btn" id="profile-btn" onclick="toggleProfile()">Show Profile</button> -->
+
+    <!-- TODO: Add the hidden student profile card (start with display: none) -->
+    <!-- <div id="student-profile" class="profile-card" style="display: none;"> -->
+        <!-- Photo placeholder, Name, Enrollment No, Course, etc. from content.md -->
+    <!-- </div> -->
+
+    <!-- Bonus: Add more toggle buttons and hidden sections for Marks and Attendance -->
+    <!-- <button class="toggle-btn" id="marks-btn" onclick="toggleMarks()" style="background-color: #388E3C;">Show Marks</button> -->
+    <!-- <div id="marks-section" class="hidden-section" style="display: none;"> ... </div> -->
+
+    <!-- <button class="toggle-btn" id="attendance-btn" onclick="toggleAttendance()" style="background-color: #F57C00;">Show Attendance</button> -->
+    <!-- <div id="attendance-section" class="hidden-section" style="display: none;"> ... </div> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
