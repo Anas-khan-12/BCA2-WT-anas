@@ -1,37 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BCA - 2nd Sem - Web Technology Lab</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>web_technology</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- Navbar Starts -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <!-- content of navbar goes here -->
         <div class="container">
-            <li class="nav-icon">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-icon">
-                <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-icon">
-                <a class="nav-link" href="#">Faculty</a>
-            </li>
-            <li class="nav-icon">
-                <a class="nav-link" href="#">Time-Table</a>
-            </li>
-            <li class="nav-icon">
-                <a class="nav-link" href="#">Galley</a>
-            </li>
-            <li class="nav-icon">
-                <a class="nav-link" href="#">FAQ</a>
-            </li>
-        </div>
+            <a class="navbar-brand fw-bold" href="#">BCA 2025-26</a>
+            <button class="navbar-toggler" data-bs-target="#mainNav" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <!-- Navigation links will be placed -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faculty">Faculty</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#time-table">Time-Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#fqa">FQA</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" aria-expanded="false" href="#"
+                            data-bs-toggle="dropdown">Resources</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li class="dropdown-item" href="#">Syllabus PDF</li>
+                            <li class="dropdown-item" href="#">Previous Year Result</li>
+                            <li class="dropdown-item" href="#">Study Material</li>
+                            <li class="dropdown-divider"></li>
+                            <li class="dropdown-item" href="#">University Portal</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
     </nav>
     <!-- Navbar Ends -->
-     
-    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- hero section start -->
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide" data-bs-interval="2500" data-bs-ride="carousel">
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" aria-label="Slide 1" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- Slides -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img-6.jpg" class="d-block w-100" alt="Images of 
+                    BCA Classroom">
+                    <div class="carousel-caption">
+                        <h2 class="display-4 fw-bold">Welcome to CA Department page</h2>
+                        <p class="lead">Mandsaur University</p>
+                        <a href="#" class="btn btn-lg mt-2 btn-warning">Explore over department</a>
+                    </div>  
+                </div>
+                <div class="carousel-item">
+                    <img src="img-5.jpg" class="d-block w-100" alt="Photo of all 
+                    faculty members of Computer Applications Department">
+                    <div class="carousel-caption">
+                        <h2 class="display-4 fw-bold">Our Faculty Members</h2>
+                        <p class="lead">Learn from our college and education about study</p>
+                        <a href="#about" class="btn btn-lg mt-2 btn-warning">Get In Touch</a>
+                    </div> 
+                </div>
+                <div class="carousel-item">
+                    <img src="img-4.jpg" class="d-block w-100" alt="photo of friend">
+                    <div class="carousel-caption">
+                        <h2 class="display-4 fw-bold">state politicions are coming in our college</h2>
+                        <p class="lead">modern lecture hall with my private jet</p>
+                        <a href="#gallery" class="btn btn-lg mt-2 btn-warning">View Gallery</a>
+                    </div> 
+                </div>
+            </div>
+            <!-- Control Buttons -->
+             <button class="carousel-control-prev" type="button"
+             data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+             <button class="carousel-control-next" type="button"
+             data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true" ></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- about section start -->
+    <!-- about section end -->
+
+    <!-- faculty & staff section start -->
+    <!-- faculty & staff section end -->
+
+    <!-- class timetable section start -->
+    <!-- class timetable section end -->
+
+    <!-- photo gallery section start -->
+    <!--photo gallery section end -->
+
+    <!-- contact section start -->
+    <!-- contact  section end -->
+
+    <!-- login model start -->
+    <!-- login model end -->
+
+    <!-- FAQ accordion start -->
+    <!-- FAQ accordion end -->
+
+    <!-- countdown section start -->
+    <!-- countdown section end -->
+
+    <!-- footer content start -->
+    <!-- footer content end -->
+
+    <!-- welcome toast start -->
+    <!-- welcome toast end -->
+
+    <!--bootstrap.5.3.2 js bundel  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
